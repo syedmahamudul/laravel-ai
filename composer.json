@@ -1,0 +1,42 @@
+{
+    "name": "syedmahamudul/laravel-ai",
+    "description": "Universal AI integration for Laravel - Works with all Laravel versions",
+    "keywords": ["laravel", "ai", "openai", "deepseek", "gemini", "chatgpt"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Syed Mahamudul Hassan",
+            "email": "syedmahamudul@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Syedmahamudul\\LaravelAi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Syedmahamudul\\LaravelAi\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Syedmahamudul\\LaravelAi\\MultiAiServiceProvider"
+            ],
+            "aliases": {
+                "MultiAi": "Syedmahamudul\\LaravelAi\\Facades\\MultiAi"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
